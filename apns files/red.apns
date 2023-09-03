@@ -1,0 +1,11 @@
+{
+    "aps" : {
+        "alert" : {
+            "title" : "",
+            "body" : ""
+        },
+        "badge" : 7
+    },
+    "Simulator Target Bundle" : "ArtemLushchan.DeeplinksAndPushNotifications",
+    "screen" : "red"
+}

@@ -7,23 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5B6A8B2A977F3E001EA2FF /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A8A2A977F3E001EA2FF /* BlueViewController.swift */; };
+		AC5B6A8D2A977FAC001EA2FF /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A8C2A977FAC001EA2FF /* RedViewController.swift */; };
+		AC5B6A8F2A977FE5001EA2FF /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A8E2A977FE5001EA2FF /* YellowViewController.swift */; };
+		AC5B6A932A978248001EA2FF /* ExternalEventProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A922A978248001EA2FF /* ExternalEventProcessor.swift */; };
+		AC5B6A952A978627001EA2FF /* InternalEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A942A978627001EA2FF /* InternalEventHandler.swift */; };
+		AC5B6A972A978780001EA2FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A962A978780001EA2FF /* Event.swift */; };
+		AC5B6A992A97F7FA001EA2FF /* WeakRefContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A982A97F7FA001EA2FF /* WeakRefContainer.swift */; };
+		AC5B6A9C2A97F94C001EA2FF /* EventPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A9B2A97F94C001EA2FF /* EventPreprocessor.swift */; };
+		AC5B6A9E2A97F993001EA2FF /* InternalEventsHandlersRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6A9D2A97F993001EA2FF /* InternalEventsHandlersRegistry.swift */; };
+		AC5B6AA12A97FB5A001EA2FF /* InvitationLinkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AA02A97FB5A001EA2FF /* InvitationLinkError.swift */; };
+		AC5B6AA82A9804A8001EA2FF /* PresentBlueControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AA72A9804A8001EA2FF /* PresentBlueControllerHandler.swift */; };
+		AC5B6AAA2A9804B4001EA2FF /* PresentRedControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AA92A9804B4001EA2FF /* PresentRedControllerHandler.swift */; };
+		AC5B6AAC2A9804BD001EA2FF /* PresentYellowControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AAB2A9804BD001EA2FF /* PresentYellowControllerHandler.swift */; };
+		AC5B6AAF2A980D57001EA2FF /* DeeplinkPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AAE2A980D57001EA2FF /* DeeplinkPreprocessor.swift */; };
+		AC5B6AB12A980D64001EA2FF /* PushNotificationPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AB02A980D64001EA2FF /* PushNotificationPreprocessor.swift */; };
+		AC5B6AB32A981AD3001EA2FF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B6AB22A981AD3001EA2FF /* AppState.swift */; };
+		AC67FEF12AA4B5D5004751B9 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC67FEF02AA4B5D5004751B9 /* NotificationManager.swift */; };
 		ACE5994D2A7C153000C37266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5994C2A7C153000C37266 /* AppDelegate.swift */; };
 		ACE5994F2A7C153000C37266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5994E2A7C153000C37266 /* SceneDelegate.swift */; };
-		ACE599512A7C153000C37266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE599502A7C153000C37266 /* ViewController.swift */; };
-		ACE599542A7C153000C37266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE599522A7C153000C37266 /* Main.storyboard */; };
+		ACE599512A7C153000C37266 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE599502A7C153000C37266 /* MainViewController.swift */; };
 		ACE599562A7C153200C37266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE599552A7C153200C37266 /* Assets.xcassets */; };
 		ACE599592A7C153200C37266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE599572A7C153200C37266 /* LaunchScreen.storyboard */; };
+		ACE599622A7C2DAA00C37266 /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE599612A7C2DAA00C37266 /* ApplicationFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC5B6A8A2A977F3E001EA2FF /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		AC5B6A8C2A977FAC001EA2FF /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		AC5B6A8E2A977FE5001EA2FF /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		AC5B6A922A978248001EA2FF /* ExternalEventProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalEventProcessor.swift; sourceTree = "<group>"; };
+		AC5B6A942A978627001EA2FF /* InternalEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalEventHandler.swift; sourceTree = "<group>"; };
+		AC5B6A962A978780001EA2FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AC5B6A982A97F7FA001EA2FF /* WeakRefContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefContainer.swift; sourceTree = "<group>"; };
+		AC5B6A9B2A97F94C001EA2FF /* EventPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPreprocessor.swift; sourceTree = "<group>"; };
+		AC5B6A9D2A97F993001EA2FF /* InternalEventsHandlersRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalEventsHandlersRegistry.swift; sourceTree = "<group>"; };
+		AC5B6AA02A97FB5A001EA2FF /* InvitationLinkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationLinkError.swift; sourceTree = "<group>"; };
+		AC5B6AA72A9804A8001EA2FF /* PresentBlueControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentBlueControllerHandler.swift; sourceTree = "<group>"; };
+		AC5B6AA92A9804B4001EA2FF /* PresentRedControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentRedControllerHandler.swift; sourceTree = "<group>"; };
+		AC5B6AAB2A9804BD001EA2FF /* PresentYellowControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentYellowControllerHandler.swift; sourceTree = "<group>"; };
+		AC5B6AAE2A980D57001EA2FF /* DeeplinkPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkPreprocessor.swift; sourceTree = "<group>"; };
+		AC5B6AB02A980D64001EA2FF /* PushNotificationPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationPreprocessor.swift; sourceTree = "<group>"; };
+		AC5B6AB22A981AD3001EA2FF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AC67FEF02AA4B5D5004751B9 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		ACE599492A7C153000C37266 /* DeeplinksAndPushNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeeplinksAndPushNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE5994C2A7C153000C37266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE5994E2A7C153000C37266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACE599502A7C153000C37266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACE599532A7C153000C37266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACE599502A7C153000C37266 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACE599552A7C153200C37266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE599582A7C153200C37266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACE5995A2A7C153200C37266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE599602A7C1E0A00C37266 /* DeeplinksAndPushNotifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeeplinksAndPushNotifications.entitlements; sourceTree = "<group>"; };
+		ACE599612A7C2DAA00C37266 /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +72,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5B6A902A9780AA001EA2FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACE599502A7C153000C37266 /* MainViewController.swift */,
+				AC5B6A8A2A977F3E001EA2FF /* BlueViewController.swift */,
+				AC5B6A8C2A977FAC001EA2FF /* RedViewController.swift */,
+				AC5B6A8E2A977FE5001EA2FF /* YellowViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC5B6A912A978237001EA2FF /* ExternalEventHandling */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6AAD2A980D3B001EA2FF /* Preprocessors */,
+				AC5B6AA62A980440001EA2FF /* InternalEventHanlders */,
+				AC5B6A9F2A97FB4D001EA2FF /* Errors */,
+				AC5B6A9A2A97F938001EA2FF /* Protocols */,
+				AC5B6A922A978248001EA2FF /* ExternalEventProcessor.swift */,
+				AC5B6A962A978780001EA2FF /* Event.swift */,
+				AC67FEF02AA4B5D5004751B9 /* NotificationManager.swift */,
+			);
+			path = ExternalEventHandling;
+			sourceTree = "<group>";
+		};
+		AC5B6A9A2A97F938001EA2FF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6A942A978627001EA2FF /* InternalEventHandler.swift */,
+				AC5B6A9B2A97F94C001EA2FF /* EventPreprocessor.swift */,
+				AC5B6A9D2A97F993001EA2FF /* InternalEventsHandlersRegistry.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AC5B6A9F2A97FB4D001EA2FF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6AA02A97FB5A001EA2FF /* InvitationLinkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		AC5B6AA22A98028C001EA2FF /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6AA32A98029B001EA2FF /* FlowCoordinator */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		AC5B6AA32A98029B001EA2FF /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ACE599612A7C2DAA00C37266 /* ApplicationFlowCoordinator.swift */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		AC5B6AA62A980440001EA2FF /* InternalEventHanlders */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6AA72A9804A8001EA2FF /* PresentBlueControllerHandler.swift */,
+				AC5B6AA92A9804B4001EA2FF /* PresentRedControllerHandler.swift */,
+				AC5B6AAB2A9804BD001EA2FF /* PresentYellowControllerHandler.swift */,
+			);
+			path = InternalEventHanlders;
+			sourceTree = "<group>";
+		};
+		AC5B6AAD2A980D3B001EA2FF /* Preprocessors */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6AAE2A980D57001EA2FF /* DeeplinkPreprocessor.swift */,
+				AC5B6AB02A980D64001EA2FF /* PushNotificationPreprocessor.swift */,
+			);
+			path = Preprocessors;
+			sourceTree = "<group>";
+		};
+		AC5B6AB42A981AE2001EA2FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC5B6A982A97F7FA001EA2FF /* WeakRefContainer.swift */,
+				AC5B6AB22A981AD3001EA2FF /* AppState.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		ACE599402A7C152F00C37266 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +178,13 @@
 		ACE5994B2A7C153000C37266 /* DeeplinksAndPushNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				AC5B6AB42A981AE2001EA2FF /* Helpers */,
+				AC5B6AA22A98028C001EA2FF /* Flow */,
+				AC5B6A912A978237001EA2FF /* ExternalEventHandling */,
+				AC5B6A902A9780AA001EA2FF /* Controllers */,
+				ACE599602A7C1E0A00C37266 /* DeeplinksAndPushNotifications.entitlements */,
 				ACE5994C2A7C153000C37266 /* AppDelegate.swift */,
 				ACE5994E2A7C153000C37266 /* SceneDelegate.swift */,
-				ACE599502A7C153000C37266 /* ViewController.swift */,
-				ACE599522A7C153000C37266 /* Main.storyboard */,
 				ACE599552A7C153200C37266 /* Assets.xcassets */,
 				ACE599572A7C153200C37266 /* LaunchScreen.storyboard */,
 				ACE5995A2A7C153200C37266 /* Info.plist */,
@@ -127,7 +252,6 @@
 			files = (
 				ACE599592A7C153200C37266 /* LaunchScreen.storyboard in Resources */,
 				ACE599562A7C153200C37266 /* Assets.xcassets in Resources */,
-				ACE599542A7C153000C37266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +262,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE599512A7C153000C37266 /* ViewController.swift in Sources */,
+				AC5B6A9E2A97F993001EA2FF /* InternalEventsHandlersRegistry.swift in Sources */,
+				ACE599512A7C153000C37266 /* MainViewController.swift in Sources */,
+				AC5B6A952A978627001EA2FF /* InternalEventHandler.swift in Sources */,
 				ACE5994D2A7C153000C37266 /* AppDelegate.swift in Sources */,
+				AC5B6A992A97F7FA001EA2FF /* WeakRefContainer.swift in Sources */,
+				ACE599622A7C2DAA00C37266 /* ApplicationFlowCoordinator.swift in Sources */,
+				AC5B6A972A978780001EA2FF /* Event.swift in Sources */,
+				AC5B6AA82A9804A8001EA2FF /* PresentBlueControllerHandler.swift in Sources */,
+				AC5B6AB32A981AD3001EA2FF /* AppState.swift in Sources */,
+				AC5B6AA12A97FB5A001EA2FF /* InvitationLinkError.swift in Sources */,
+				AC5B6AAA2A9804B4001EA2FF /* PresentRedControllerHandler.swift in Sources */,
+				AC5B6A8F2A977FE5001EA2FF /* YellowViewController.swift in Sources */,
+				AC5B6AAC2A9804BD001EA2FF /* PresentYellowControllerHandler.swift in Sources */,
+				AC5B6A932A978248001EA2FF /* ExternalEventProcessor.swift in Sources */,
+				AC5B6AAF2A980D57001EA2FF /* DeeplinkPreprocessor.swift in Sources */,
+				AC5B6A8B2A977F3E001EA2FF /* BlueViewController.swift in Sources */,
+				AC5B6A8D2A977FAC001EA2FF /* RedViewController.swift in Sources */,
 				ACE5994F2A7C153000C37266 /* SceneDelegate.swift in Sources */,
+				AC67FEF12AA4B5D5004751B9 /* NotificationManager.swift in Sources */,
+				AC5B6A9C2A97F94C001EA2FF /* EventPreprocessor.swift in Sources */,
+				AC5B6AB12A980D64001EA2FF /* PushNotificationPreprocessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ACE599522A7C153000C37266 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACE599532A7C153000C37266 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ACE599572A7C153200C37266 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,14 +419,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinksAndPushNotifications/DeeplinksAndPushNotifications.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4KZ75XVSA2;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeeplinksAndPushNotifications/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +437,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemLushchan.DeeplinksAndPushNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,14 +449,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeeplinksAndPushNotifications/DeeplinksAndPushNotifications.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4KZ75XVSA2;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeeplinksAndPushNotifications/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,6 +467,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemLushchan.DeeplinksAndPushNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

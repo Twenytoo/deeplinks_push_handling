@@ -1,0 +1,10 @@
+{
+    "aps" : {
+        "alert" : {
+            "title" : "Push On Simulator",
+            "body" : "You have sent it on simulator"
+        },
+        "badge" : 7
+    },
+    "Simulator Target Bundle" : "ArtemLushchan.DeeplinksAndPushNotifications"
+}

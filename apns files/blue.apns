@@ -1,0 +1,11 @@
+{
+    "aps" : {
+        "alert" : {
+            "title" : "blue",
+            "body" : "Present blue screen"
+        },
+        "badge" : 7
+    },
+    "Simulator Target Bundle" : "ArtemLushchan.DeeplinksAndPushNotifications",
+    "screen" : "blue"
+}
