@@ -35,19 +35,13 @@ final class ApplicationFlowCoordinator: NSObject {
     externalEventProcessor = ExternalEventProcessor(
       eventHandlers: [
         PresentBlueControllerHandler(handler: { [unowned self] in
-          let controller = UINavigationController(rootViewController: BlueViewController())
-          controller.navigationBar.prefersLargeTitles = true
-          rootViewController?.present(controller, animated: true)
+          self.presentBlueViewController()
         }),
         PresentRedControllerHandler(handler: { [unowned self] in
-          let controller = UINavigationController(rootViewController: RedViewController())
-          controller.navigationBar.prefersLargeTitles = true
-          rootViewController?.present(controller, animated: true)
+          self.presentRedViewController()
         }),
         PresentYellowControllerHandler(handler: { [unowned self] in
-          let controller = UINavigationController(rootViewController: YellowViewController())
-          controller.navigationBar.prefersLargeTitles = true
-          rootViewController?.present(controller, animated: true)
+          self.presentYellowViewController()
         })
       ],
       eventPreprocessors: [
@@ -124,8 +118,47 @@ extension ApplicationFlowCoordinator {
 extension ApplicationFlowCoordinator: NotificationManagerDelegate {
 
   func processPushNotification(_ notification: UNNotification, completion: @escaping () -> Void) {
-    let handler: PushNotificationConfig = .init(notification: notification, completion: completion)
-    externalEventPublisher.send(.pushNotification(handler))
+    externalEventPublisher.send(.pushNotification(notification))
   }
 
+}
+
+extension ApplicationFlowCoordinator {
+  
+  func presentBlueViewController() {
+    if rootViewController?.presentedViewController != nil {
+      rootViewController?.dismiss(animated: true)
+    }
+    
+    // Assembling flow
+    let controller = BlueViewController()
+    let navigationController = UINavigationController(rootViewController: controller)
+    navigationController.navigationBar.prefersLargeTitles = true
+    
+    // Handler registration
+    externalEventProcessor.register(WeakRefContainer(controller))
+    
+    rootViewController?.present(navigationController, animated: true)
+  }
+  
+  func presentRedViewController() {
+    if rootViewController?.presentedViewController != nil {
+      rootViewController?.dismiss(animated: true)
+    }
+    
+    let controller = UINavigationController(rootViewController: RedViewController())
+    controller.navigationBar.prefersLargeTitles = true
+    rootViewController?.present(controller, animated: true)
+  }
+  
+  func presentYellowViewController() {
+    if rootViewController?.presentedViewController != nil {
+      rootViewController?.dismiss(animated: true)
+    }
+    
+    let controller = UINavigationController(rootViewController: YellowViewController())
+    controller.navigationBar.prefersLargeTitles = true
+    rootViewController?.present(controller, animated: true)
+  }
+  
 }

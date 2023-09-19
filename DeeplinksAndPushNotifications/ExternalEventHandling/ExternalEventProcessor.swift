@@ -15,21 +15,6 @@ private struct Constants {
   
 }
 
-public struct PushNotificationConfig {
-  
-  let notification: UNNotification
-  let completion: () -> Void
-  
-  public init(
-    notification: UNNotification,
-    completion: @escaping () -> Void
-  ) {
-    self.notification = notification
-    self.completion = completion
-  }
-  
-}
-
 public final class ExternalEventProcessor {
   
   private var eventHandlers: [InternalEventHandler]
@@ -48,44 +33,44 @@ public final class ExternalEventProcessor {
     case .universalLink(let url):
       processUniversalLink(url)
       
-    case let .pushNotification(configuration):
-      processRemoteNotification(
-        configuration.notification,
-        completion: configuration.completion
-      )
+    case let .pushNotification(notification):
+      processRemoteNotification(notification)
     }
   }
   
-  private func processRemoteNotification(_ notification: UNNotification, completion: @escaping () -> Void) {
+  private func processRemoteNotification(_ notification: UNNotification) {
     Task {
       do {
-        let event: Event = .externalEvent(event: .notification(userInfo: notification.request.content.userInfo))
-        let preprocessedEvent = try await preprocessEvent(event)
+        let preprocessedEvent = try await preprocessEvent(.externalEvent(event: .notification(userInfo: notification.request.content.userInfo)))
         
-        await MainActor.run {
-          handleEvent(preprocessedEvent, completion: completion)
-        }
-      }
-    }
-  }
-  
-  private func processUniversalLink(_ link: URL) {
-    Task {
-      do {
-        let parsedEvent = try parse(link)
-        let preprocessedEvent = try await preprocessEvent(parsedEvent)
-
         await MainActor.run {
           handleEvent(preprocessedEvent)
         }
       } catch {
         // handle error
         print(error)
+      }
+    }
+  }
+
+  
+  private func processUniversalLink(_ link: URL) {
+    Task {
+      do {
+        let parsedEvent = try parse(link)
+        let preprocessedEvent = try await preprocessEvent(parsedEvent)
         
+        await MainActor.run {
+          handleEvent(preprocessedEvent)
+        }
+      } catch {
+        // handle error
+        print(error)
       }
     }
   }
   
+// Running the event through the array of preprocessors
   private func preprocessEvent(_ event: Event) async throws -> Event {
       var processingEvent = event
       for processor in eventPreprocessors {
@@ -96,15 +81,15 @@ public final class ExternalEventProcessor {
       return processingEvent
   }
   
-  private func handleEvent(_ event: Event, completion: (() -> Void)? = nil) {
+  private func handleEvent(_ event: Event) {
 //     Updating the list of handlers before processing a new event.
     eventHandlers = eventHandlers.filter { !$0.shouldBeRemoved }
+    
     guard
       case .internalEvent(let event) = event,
       let handler = eventHandlers.last(where: { $0.canHandle(event) })
     else {
-      completion?()
-      
+      // handle somehow
       return
     }
      

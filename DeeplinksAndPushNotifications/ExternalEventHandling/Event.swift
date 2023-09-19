@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import UserNotifications
 
 public enum ExternalEventType {
   
   case universalLink(URL)
-  case pushNotification(PushNotificationConfig)
+  case pushNotification(UNNotification)
   
 }
 
@@ -19,12 +20,6 @@ public enum Event: Equatable {
   public enum ExternalEvent {
     
     case deeplink(path: String)
-    /// In case when app in foreground state 'Coordinator' first who is able to handle event,
-    /// then we have to pass event handling to model if it's ready.
-    
-    /// Otherwise, a notification banner will be displayed.
-    /// After processing the banner, the 'isBannerTapped' attribute will be 'true',
-    /// which means that the event can be processed at the 'Coordinator' level
     case notification(userInfo: [AnyHashable: Any])
     
   }

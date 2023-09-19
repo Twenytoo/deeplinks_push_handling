@@ -19,7 +19,5 @@ class MainViewController: UIViewController {
     title = "Main Controller"
     view.backgroundColor = .white
   }
-
-
+  
 }
-
